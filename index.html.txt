@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adora Montminy - Creative Portfolio</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light background */
+            color: #333;
+        }
+        .section-padding {
+            padding: 6rem 1.5rem; /* Increased padding for sections */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .btn-primary {
+            @apply inline-block px-8 py-3 bg-yellow-500 text-white font-semibold rounded-full shadow-lg hover:bg-yellow-600 transition-colors duration-300;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-md overflow-hidden;
+        }
+        .header-bg {
+            background-color: #fef08a; /* Yellow-ish header background */
+        }
+        .section-title {
+            @apply text-4xl font-bold text-gray-800 mb-12 text-center;
+        }
+        .text-yellow {
+            color: #facc15; /* Tailwind yellow-400 */
+        }
+        /* Custom styles for image placeholders to match the PDF's rounded corners */
+        .placeholder-image {
+            border-radius: 0.75rem; /* rounded-xl */
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="header-bg py-20">
+        <div class="container text-center">
+            <h1 class="text-6xl font-extrabold text-gray-900 mb-4 tracking-tight">CREATIVE PORTFOLIO</h1>
+            <p class="text-xl text-gray-700 mb-8">by Adora Montminy</p>
+            <a href="#contact" class="btn-primary">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="section-padding bg-white">
+        <div class="container text-center">
+            <h2 class="text-5xl font-bold text-gray-800 mb-6">Welcome</h2>
+            <p class="text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                TO THE CREATIVE PRESENTATION
+            </p>
+            <p class="text-lg text-gray-500 mt-4 max-w-4xl mx-auto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-padding">
+        <div class="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="card p-6 md:p-8">
+                <!-- Replace this placeholder with your actual image URL -->
+                <img src="https://placehold.co/600x400/facc15/ffffff?text=Adora+Montminy" alt="Adora Montminy" class="placeholder-image mb-6">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-4">Introducing <span class="text-yellow">ABOUT ME</span></h3>
+                <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="text-xl font-medium text-gray-700">
+                    <strong>Adora Montminy</strong><br>Graphic Designer
+                </p>
+            </div>
+            <div class="card p-6 md:p-8">
+                <!-- Replace this placeholder with your actual image URL -->
+                <img src="https://placehold.co/600x400/facc15/ffffff?text=Desk+Setup" alt="Work Setup" class="placeholder-image mb-6">
+                <div class="grid grid-cols-2 gap-6 text-center">
+                    <div>
+                        <p class="text-4xl font-bold text-yellow">2.543</p>
+                        <p class="text-gray-600">Followers</p>
+                    </div>
+                    <div>
+                        <p class="text-4xl font-bold text-yellow">400+</p>
+                        <p class="text-gray-600">Product Design</p>
+                    </div>
+                    <div>
+                        <p class="text-4xl font-bold text-yellow">3,245</p>
+                        <p class="text-gray-600">Job Event</p>
+                    </div>
+                    <div>
+                        <p class="text-4xl font-bold text-yellow">543</p>
+                        <p class="text-gray-600">Sales</p>
+                    </div>
+                </div>
+                <p class="text-lg text-gray-500 mt-8 leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="section-padding bg-white">
+        <div class="container text-center">
+            <!-- Replace this placeholder with your actual image URL -->
+            <img src="https://placehold.co/800x500/facc15/ffffff?text=Vision+Image" alt="Vision" class="placeholder-image mx-auto mb-8">
+            <h2 class="text-5xl font-bold text-gray-800 mb-6">VISION</h2>
+            <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn-primary">READ MORE</a>
+        </div>
+    </section>
+
+    <!-- Personal Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">PERSONAL SKILLS</h2>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card text-center p-6">
+                    <!-- Replace this placeholder with your actual image URL -->
+                    <img src="https://placehold.co/400x300/facc15/ffffff?text=Graphics+Design" alt="Graphics Design" class="placeholder-image mx-auto mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Graphics Designing</h3>
+                </div>
+                <div class="card text-center p-6">
+                    <!-- Replace this placeholder with your actual image URL -->
+                    <img src="https://placehold.co/400x300/facc15/ffffff?text=Web+Design" alt="Web Design" class="placeholder-image mx-auto mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Web Designing</h3>
+                </div>
+                <div class="card text-center p-6">
+                    <!-- Replace this placeholder with your actual image URL -->
+                    <img src="https://placehold.co/400x300/facc15/ffffff?text=Photography" alt="Photography" class="placeholder-image mx-auto mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Photography</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section-padding bg-white">
+        <div class="container">
+            <h2 class="section-title">Work EXPERIENCE</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                <div class="card p-6 md:p-8">
+                    <!-- Replace this placeholder with your actual image URL -->
+                    <img src="https://placehold.co/600x400/facc15/ffffff?text=Work+Image+1" alt="Work Experience 1" class="placeholder-image mb-6">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-4">Graphics Designer</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                    </p>
+                    <p class="text-gray-500 text-sm">2010</p>
+                </div>
+                <div class="card p-6 md:p-8">
+                    <!-- Replace this placeholder with your actual image URL -->
+                    <img src="https://placehold.co/600x400/facc15/ffffff?text=Work+Image+2" alt="Work Experience 2" class="placeholder-image mb-6">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-4">Web Designer</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                    </p>
+                    <p class="text-gray-500 text-sm">2010</p>
+                </div>
+                <div class="card p-6 md:p-8 md:col-span-2">
+                    <!-- Replace this placeholder with your actual image URL -->
+                    <img src="https://placehold.co/800x400/facc15/ffffff?text=Work+Image+3" alt="Work Experience 3" class="placeholder-image mb-6">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-4">Photographer</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                    </p>
+                    <p class="text-gray-500 text-sm">2010</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Projects Section -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Project PORTFOLIO</h2>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                <div class="card p-6 md:p-8">
+                    <!-- Replace this placeholder with your actual image URL -->
+                    <img src="https://placehold.co/600x400/facc15/ffffff?text=Project+01+Image" alt="Project 01" class="placeholder-image mb-6">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-4">PROJECT 01</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="card p-6 md:p-8">
+                    <!-- Replace this placeholder with your actual image URL -->
+                    <img src="https://placehold.co/600x400/facc15/ffffff?text=Project+02+Image" alt="Project 02" class="placeholder-image mb-6">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-4">PROJECT 02</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        20K+ DOWNLOAD TOTAL. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card p-6 md:p-8 max-w-3xl mx-auto">
+                <!-- Replace this placeholder with your actual image URL -->
+                <img src="https://placehold.co/800x500/facc15/ffffff?text=Project+03+Image" alt="Project 03" class="placeholder-image mb-6">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-4">PROJECT 03</h3>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualities Section -->
+    <section id="qualities" class="section-padding bg-white">
+        <div class="container">
+            <h2 class="section-title">Notable Project Qualities</h2>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card text-center p-6">
+                    <!-- Replace this placeholder with your actual image URL -->
+                    <img src="https://placehold.co/400x300/facc15/ffffff?text=Quality+1" alt="High Quality" class="placeholder-image mx-auto mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800">High Quality</h3>
+                </div>
+                <div class="card text-center p-6">
+                    <!-- Replace this placeholder with your actual image URL -->
+                    <img src="https://placehold.co/400x300/facc15/ffffff?text=Quality+2" alt="Best Product" class="placeholder-image mx-auto mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Best Product</h3>
+                </div>
+                <div class="card text-center p-6">
+                    <!-- Replace this placeholder with your actual image URL -->
+                    <img src="https://placehold.co/400x300/facc15/ffffff?text=Quality+3" alt="Great Design" class="placeholder-image mx-auto mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Great Design</h3>
+                </div>
+                <div class="card text-center p-6">
+                    <!-- Replace this placeholder with your actual image URL -->
+                    <img src="https://placehold.co/400x300/facc15/ffffff?text=Quality+4" alt="Nice Decoration" class="placeholder-image mx-auto mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Nice Decoration</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="header-bg py-20 text-center">
+        <div class="container">
+            <h2 class="text-5xl font-bold text-gray-900 mb-6">THANKS FOR WATCHING</h2>
+            <p class="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-xl text-gray-800 font-medium">
+                <p>+123-456-7890</p>
+                <p>hello@reallygreatsite.com</p>
+                <p>www.reallygreatsite.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
