@@ -3,217 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adora Montminy - Creative Portfolio</title>
+    <title>DZINR - Design Agency</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
-            color: #333;
-        }
-        .section {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            text-align: center;
-        }
-        .cover {
-            background-color: #f4e04d; /* Yellow theme */
-            color: #333;
-            position: relative;
-        }
-        .cover img {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .cover h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .cover p {
-            font-size: 1.2em;
-        }
-        .section h2 {
-            font-size: 2.5em;
-            color: #f4e04d;
-            margin-bottom: 20px;
-        }
-        .section p {
-            max-width: 600px;
-            line-height: 1.6;
-            font-size: 1.1em;
-        }
-        .about img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            object-fit: cover;
-        }
-        .stats, .skills, .education, .portfolio {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .stat, .skill, .edu, .project {
-            background-color: #f4e04d;
-            padding: 20px;
-            border-radius: 10px;
-            width: 200px;
-            text-align: center;
-        }
-        .project img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-        .notable-project img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .footer {
-            background-color: #333;
+            font-family: Arial, sans-serif;
+            background-color: #000;
             color: #fff;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
         }
-        a {
-            color: #f4e04d;
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            width: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .icons img {
+            width: 40px;
+        }
+        .about {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .about p {
+            color: #ccc;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .projects, .services {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .project-card, .service-card {
+            display: inline-block;
+            margin: 20px;
+            width: 300px;
+            vertical-align: top;
+        }
+        .project-card img, .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-card p, .service-card p {
+            color: #ccc;
+        }
+        .cta {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .cta button {
+            background-color: #f28c38;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+            .icons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .icons img {
+                margin: 10px 0;
+            }
+            .project-card, .service-card {
+                width: 100%;
+                margin: 10px 0;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header img {
+                width: 40px;
+            }
+            .hero {
+                padding: 30px 10px;
+            }
+            .about {
+                padding: 30px 10px;
+            }
+            .projects, .services {
+                padding: 30px 10px;
+            }
+            .cta {
+                padding: 30px 10px;
+            }
+            .cta button {
+                font-size: 1em;
+                padding: 8px 15px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Cover Page -->
-    <div class="section cover">
-        <img src="images/hero.jpg" alt="Portfolio Hero Image">
-        <h1>Creative Portfolio</h1>
-        <p>by Adora Montminy</p>
-        <p><a href="http://www.reallygreatsite.com">www.reallygreatsite.com</a></p>
-    </div>
+    <header>
+        <img src="https://picsum.photos/50/50" alt="DZINR Logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <!-- Welcome Section -->
-    <div class="section">
-        <h2>Welcome to the Creative Presentation</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-
-    <!-- About Me -->
-    <div class="section about">
-        <h2>About Me</h2>
-        <img src="images/profile.jpg" alt="Adora Montminy Profile">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="stats">
-            <div class="stat">
-                <h3>2,543</h3>
-                <p>Followers</p>
-            </div>
-            <div class="stat">
-                <h3>3,245</h3>
-                <p>Sales</p>
-            </div>
-            <div class="stat">
-                <h3>400+</h3>
-                <p>Product Design</p>
-            </div>
-            <div class="stat">
-                <h3>543</h3>
-                <p>Job Event</p>
-            </div>
+    <section class="hero">
+        <h1>We craft purposeful brand identities and effective logos</h1>
+        <p>Transform your reality into unforgettable branding solutions.</p>
+        <div class="icons">
+            <img src="https://picsum.photos/40/40?random=1" alt="Icon 1">
+            <img src="https://picsum.photos/40/40?random=2" alt="Icon 2">
+            <img src="https://picsum.photos/40/40?random=3" alt="Icon 3">
+            <img src="https://picsum.photos/40/40?random=4" alt="Icon 4">
+            <img src="https://picsum.photos/40/40?random=5" alt="Icon 5">
+            <img src="https://picsum.photos/40/40?random=6" alt="Icon 6">
         </div>
-    </div>
+    </section>
 
-    <!-- Personal Skills -->
-    <div class="section">
-        <h2>Personal Skills</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
-        <div class="skills">
-            <div class="skill">Graphics Designing</div>
-            <div class="skill">Web Designing</div>
-            <div class="skill">Photography</div>
+    <section class="about">
+        <p>Where innovation meets artistry! Our design agency is dedicated to crafting bespoke, unforgettable visual experiences for brands made to stand out.</p>
+    </section>
+
+    <section class="projects">
+        <h2>Our Projects</h2>
+        <div class="project-card">
+            <img src="https://picsum.photos/300/200?random=7" alt="House of X">
+            <p>House of X - Logo design and branding solution...</p>
+            <button>View Project</button>
         </div>
-    </div>
-
-    <!-- Education -->
-    <div class="section">
-        <h2>Education</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="education">
-            <div class="edu">
-                <h3>2011 - 2014</h3>
-                <p>Bachelor of Design<br>Fauget University<br>Graduated in Web Design</p>
-            </div>
-            <div class="edu">
-                <h3>2011 - 2014</h3>
-                <p>Bachelor of Design<br>Fauget University<br>Graduated in Web Design</p>
-            </div>
+        <div class="project-card">
+            <img src="https://picsum.photos/300/200?random=8" alt="Maninder Buttar">
+            <p>Maninder Buttar - Logo design and branding solution...</p>
+            <button>View Project</button>
         </div>
-    </div>
-
-    <!-- Work Experience -->
-    <div class="section">
-        <h2>Work Experience</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-    </div>
-
-    <!-- Portfolio -->
-    <div class="section">
-        <h2>Portfolio</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="portfolio">
-            <div class="project">
-                <img src="images/project1.jpg" alt="Project 01">
-                <h3>Project 01</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="project">
-                <img src="images/project2.jpg" alt="Project 02">
-                <h3>Project 02</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="project">
-                <img src="images/project3.jpg" alt="Project 03">
-                <h3>Project 03</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+        <div class="project-card">
+            <img src="https://picsum.photos/300/200?random=9" alt="Indian Farmer">
+            <p>Indian Farmer - Logo design and branding solution...</p>
+            <button>View Project</button>
         </div>
-    </div>
+    </section>
 
-    <!-- Notable Project -->
-    <div class="section notable-project">
-        <h2>Notable Project</h2>
-        <img src="images/notable-project.jpg" alt="Notable Project">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>20K+ Download Total</p>
-    </div>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <img src="https://picsum.photos/300/200?random=10" alt="Logo Designing">
+            <p>Logo Designing - Crafting unique logos...</p>
+        </div>
+        <div class="service-card">
+            <img src="https://picsum.photos/300/200?random=11" alt="Branding">
+            <p>Branding - Building the image of your company...</p>
+        </div>
+        <div class="service-card">
+            <img src="https://picsum.photos/300/200?random=12" alt="Graphic Design">
+            <p>Graphic Design - Creating your deep-rooted designs...</p>
+        </div>
+    </section>
 
-    <!-- Thank You -->
-    <div class="section">
-        <h2>Thanks for Watching</h2>
-    </div>
+    <section class="cta">
+        <p>Won’t build a credible and relatable brand for your target audience?</p>
+        <button>Let’s connect today!</button>
+    </section>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p><a href="http://www.reallygreatsite.com">www.reallygreatsite.com</a></p>
-    </div>
+    <footer>
+        <p>DZINR | Design © 2025 | All rights reserved</p>
+        <p><a href="mailto:design@dzinr.com">design@dzinr.com</a></p>
+    </footer>
 </body>
 </html>
