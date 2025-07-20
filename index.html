@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>arpongfx - Design Agency</title>
+    <title>DZINR - Design Agency</title>
     <style>
         body {
             margin: 0;
@@ -15,9 +15,13 @@
         header {
             text-align: center;
             padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        header img {
-            width: 50px;
+        header span {
+            font-size: 1.5em;
+            font-weight: bold;
         }
         nav {
             display: flex;
@@ -119,11 +123,18 @@
                 flex-direction: column;
                 gap: 10px;
             }
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            header span {
+                margin-top: 10px;
+            }
         }
 
         @media (max-width: 480px) {
-            header img {
-                width: 40px;
+            header span {
+                font-size: 1.2em;
             }
             .hero {
                 padding: 30px 10px;
@@ -146,13 +157,13 @@
 </head>
 <body>
     <header>
-        <img src="https://picsum.photos/50/50" alt="DZINR Logo">
         <nav>
             <a href="#home">Home</a>
             <a href="#projects">Projects</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
         </nav>
+        <span>arpongfx</span>
     </header>
 
     <section class="hero">
